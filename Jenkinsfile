@@ -1,5 +1,9 @@
 pipeline {
      agent any
+     environment {
+         AWS_REGION = 'us-east-2'
+         AWS_DEFAULT_REGION = 'us-east-2'           
+         }     
      stages {
          stage('Build') {
              steps {
